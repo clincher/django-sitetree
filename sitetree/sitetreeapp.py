@@ -339,7 +339,7 @@ class SiteTree(object):
                     argument = '"%s"' % argument
                 view_arguments.append(argument)
 
-            url_pattern = u'%s %s' % (view_path, ' '.join(view_arguments))
+            url_pattern = u'"%s" %s' % (view_path, ' '.join(view_arguments))
         else:
             url_pattern = unicode(sitetree_item.url)
 
